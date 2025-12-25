@@ -1,8 +1,8 @@
 import os
 
-import omni.isaac.lab.sim as sim_utils
-from omni.isaac.lab.actuators import ImplicitActuatorCfg
-from omni.isaac.lab.assets.articulation import ArticulationCfg
+import isaaclab.sim as sim_utils
+from isaaclab.actuators import ImplicitActuatorCfg
+from isaaclab.assets.articulation import ArticulationCfg
 
 current_dir = os.path.dirname(__file__)
 usd_path = os.path.join(current_dir, "../usd/PF_P441C/PF_P441C.usd")

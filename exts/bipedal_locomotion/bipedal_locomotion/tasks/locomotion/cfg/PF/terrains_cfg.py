@@ -1,4 +1,4 @@
-from omni.isaac.lab.terrains import (
+from isaaclab.terrains import (
     HfInvertedPyramidSlopedTerrainCfg,
     HfPyramidSlopedTerrainCfg,
     HfRandomUniformTerrainCfg,

@@ -4,7 +4,8 @@
 
 import argparse
 
-from omni.isaac.lab.app import AppLauncher
+# from isaaclab.app import 
+from isaaclab.app import AppLauncher
 
 # local imports
 import cli_args  # isort: skip
@@ -38,16 +39,18 @@ import os
 import torch
 from datetime import datetime
 
-from omni.isaac.lab.envs import ManagerBasedRLEnvCfg
-from omni.isaac.lab.utils.dict import print_dict
-from omni.isaac.lab.utils.io import dump_pickle, dump_yaml
-from omni.isaac.lab_tasks.utils import get_checkpoint_path, parse_env_cfg
-from omni.isaac.lab_tasks.utils.wrappers.rsl_rl import RslRlOnPolicyRunnerCfg, RslRlVecEnvWrapper
+from isaaclab.envs import ManagerBasedRLEnvCfg
+from isaaclab.utils.dict import print_dict
+# from isaaclab.utils.io import dump_pickle, dump_yaml
+from isaaclab.utils.io import dump_yaml
+from isaaclab_tasks.utils import get_checkpoint_path, parse_env_cfg
+# from isaaclab_tasks.utils.wrappers.rsl_rl import RslRlOnPolicyRunnerCfg, RslRlVecEnvWrapper
+from isaaclab_rl.rsl_rl import RslRlVecEnvWrapper
 
 # Import extensions to set up environment tasks
 import bipedal_locomotion  # noqa: F401
 from bipedal_locomotion.utils.wrappers.rsl_rl import RslRlOnPolicyRunnerMlpCfg
-from rsl_rl.runners import OnPolicyRunner, OnPolicyRunnerMlp
+from rsl_rl.runners import OnPolicyRunner
 
 torch.backends.cuda.matmul.allow_tf32 = True
 torch.backends.cudnn.allow_tf32 = True
@@ -96,7 +99,7 @@ def main():
 
     # create runner from rsl-rl
     on_policy_runner_class = eval(agent_cfg.runner_type)
-    runner: OnPolicyRunner | OnPolicyRunnerMlp = on_policy_runner_class(
+    runner: OnPolicyRunner = on_policy_runner_class(
         env, agent_cfg.to_dict(), log_dir=log_dir, device=agent_cfg.device
     )
     # write git state to logs
@@ -118,8 +121,8 @@ def main():
     # dump the configuration into log-directory
     dump_yaml(os.path.join(log_dir, "params", "env.yaml"), env_cfg)
     dump_yaml(os.path.join(log_dir, "params", "agent.yaml"), agent_cfg)
-    dump_pickle(os.path.join(log_dir, "params", "env.pkl"), env_cfg)
-    dump_pickle(os.path.join(log_dir, "params", "agent.pkl"), agent_cfg)
+    # dump_pickle(os.path.join(log_dir, "params", "env.pkl"), env_cfg)
+    # dump_pickle(os.path.join(log_dir, "params", "agent.pkl"), agent_cfg)
 
     # run training
     runner.learn(num_learning_iterations=agent_cfg.max_iterations, init_at_random_ep_len=True)

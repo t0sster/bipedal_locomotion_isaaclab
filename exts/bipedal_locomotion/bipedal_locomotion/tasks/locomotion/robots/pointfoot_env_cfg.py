@@ -1,6 +1,6 @@
 import math
 
-from omni.isaac.lab.utils import configclass
+from isaaclab.utils import configclass
 
 from bipedal_locomotion.assets.config.pointfoot_cfg import POINTFOOT_CFG
 from bipedal_locomotion.tasks.locomotion.cfg.PF.base_env_cfg import PFEnvCfg
@@ -11,11 +11,11 @@ from bipedal_locomotion.tasks.locomotion.cfg.PF.terrains_cfg import (
     STAIRS_TERRAINS_PLAY_CFG,
 )
 
-from omni.isaac.lab.sensors import RayCasterCfg, patterns
+from isaaclab.sensors import RayCasterCfg, patterns
 from bipedal_locomotion.tasks.locomotion import mdp
-from omni.isaac.lab.utils.noise import AdditiveGaussianNoiseCfg as GaussianNoise
-from omni.isaac.lab.managers import ObservationTermCfg as ObsTerm
-from omni.isaac.lab.managers import SceneEntityCfg
+from isaaclab.utils.noise import AdditiveGaussianNoiseCfg as GaussianNoise
+from isaaclab.managers import ObservationTermCfg as ObsTerm
+from isaaclab.managers import SceneEntityCfg
 
 
 ######################

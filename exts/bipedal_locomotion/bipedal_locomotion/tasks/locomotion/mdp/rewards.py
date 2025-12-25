@@ -1,6 +1,6 @@
 """This sub-module contains the reward functions that can be used for LimX Point Foot's locomotion task.
 
-The functions can be passed to the :class:`omni.isaac.lab.managers.RewardTermCfg` object to
+The functions can be passed to the :class:`isaaclab.managers.RewardTermCfg` object to
 specify the reward function and its parameters.
 """
 
@@ -11,14 +11,14 @@ import torch
 from torch import distributions
 from typing import TYPE_CHECKING, Optional
 
-from omni.isaac.lab.assets import Articulation, RigidObject
-from omni.isaac.lab.managers import ManagerTermBase, SceneEntityCfg
-from omni.isaac.lab.sensors import ContactSensor, RayCaster
-import omni.isaac.lab.utils.math as math_utils
+from isaaclab.assets import Articulation, RigidObject
+from isaaclab.managers import ManagerTermBase, SceneEntityCfg
+from isaaclab.sensors import ContactSensor, RayCaster
+import isaaclab.utils.math as math_utils
 
 if TYPE_CHECKING:
-    from omni.isaac.lab.envs import ManagerBasedRLEnv
-    from omni.isaac.lab.managers import RewardTermCfg
+    from isaaclab.envs import ManagerBasedRLEnv
+    from isaaclab.managers import RewardTermCfg
 
 
 def joint_powers_l1(env: ManagerBasedRLEnv, asset_cfg: SceneEntityCfg = SceneEntityCfg("robot")) -> torch.Tensor:
@@ -356,7 +356,7 @@ class ActionSmoothnessPenalty(ManagerTermBase):
         self.dt = env.step_dt
         self.prev_prev_action = None
         self.prev_action = None
-        self.__name__ = "action_smoothness_penalty"
+        # self.__name__ = "action_smoothness_penalty"
 
     def __call__(self, env: ManagerBasedRLEnv) -> torch.Tensor:
         """Compute the action smoothness penalty.

@@ -1,8 +1,8 @@
 import math
 from dataclasses import MISSING
 
-from omni.isaac.lab.managers import CommandTermCfg
-from omni.isaac.lab.utils import configclass
+from isaaclab.managers import CommandTermCfg
+from isaaclab.utils import configclass
 
 from .gait_command import GaitCommand  # Import the GaitCommand class
 

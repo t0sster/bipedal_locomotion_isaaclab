@@ -1,4 +1,4 @@
-from omni.isaac.lab_tasks.manager_based.locomotion.velocity.mdp import *
+from isaaclab_tasks.manager_based.locomotion.velocity.mdp import *
 
 from .commands import *
 from .curriculums import *

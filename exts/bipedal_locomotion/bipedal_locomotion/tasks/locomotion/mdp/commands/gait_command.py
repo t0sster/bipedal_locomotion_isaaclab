@@ -5,10 +5,10 @@ from __future__ import annotations
 import torch
 from typing import TYPE_CHECKING
 
-from omni.isaac.lab.managers import CommandTerm
+from isaaclab.managers import CommandTerm
 
 if TYPE_CHECKING:
-    from omni.isaac.lab.envs import ManagerBasedEnv
+    from isaaclab.envs import ManagerBasedEnv
 
     from .commands_cfg import UniformGaitCommandCfg
 

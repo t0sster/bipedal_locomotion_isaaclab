@@ -63,7 +63,7 @@ wf_stair_runner_cfg.experiment_name = "wf_mlp_stair"
 
 gym.register(
     id="Isaac-PF-Blind-Flat-v0",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": pointfoot_env_cfg.PFBlindFlatEnvCfg,
@@ -73,7 +73,7 @@ gym.register(
 
 gym.register(
     id="Isaac-PF-Blind-Flat-Play-v0",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": pointfoot_env_cfg.PFBlindFlatEnvCfg_PLAY,
@@ -88,7 +88,7 @@ gym.register(
 
 gym.register(
     id="Isaac-PF-Blind-Flat-v1",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": pointfoot_env_cfg.PFBlindFlatEnvCfg,
@@ -98,7 +98,7 @@ gym.register(
 
 gym.register(
     id="Isaac-PF-Blind-Flat-Play-v1",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": pointfoot_env_cfg.PFBlindFlatEnvCfg_PLAY,
@@ -113,7 +113,7 @@ gym.register(
 
 gym.register(
     id="Isaac-PF-Blind-Rough-v0",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": pointfoot_env_cfg.PFBlindRoughEnvCfg,
@@ -123,7 +123,7 @@ gym.register(
 
 gym.register(
     id="Isaac-PF-Blind-Rough-Play-v0",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": pointfoot_env_cfg.PFBlindRoughEnvCfg_PLAY,
@@ -138,7 +138,7 @@ gym.register(
 
 gym.register(
     id="Isaac-PF-Blind-Rough-v1",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": pointfoot_env_cfg.PFBlindRoughEnvCfg,
@@ -148,7 +148,7 @@ gym.register(
 
 gym.register(
     id="Isaac-PF-Blind-Rough-Play-v1",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": pointfoot_env_cfg.PFBlindRoughEnvCfg_PLAY,
@@ -163,7 +163,7 @@ gym.register(
 
 gym.register(
     id="Isaac-PF-Blind-Stairs-v0",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": pointfoot_env_cfg.PFBlindStairEnvCfg,
@@ -173,7 +173,7 @@ gym.register(
 
 gym.register(
     id="Isaac-PF-Blind-Stairs-Play-v0",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": pointfoot_env_cfg.PFBlindStairEnvCfg_PLAY,
@@ -188,7 +188,7 @@ gym.register(
 
 gym.register(
     id="Isaac-PF-Blind-Stair-v1",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": pointfoot_env_cfg.PFBlindStairEnvCfg,
@@ -198,7 +198,7 @@ gym.register(
 
 gym.register(
     id="Isaac-PF-Blind-Stair-Play-v1",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": pointfoot_env_cfg.PFBlindStairEnvCfg_PLAY,
@@ -213,7 +213,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Blind-Flat-v0",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFBlindFlatEnvCfg,
@@ -223,7 +223,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Blind-Flat-Play-v0",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFBlindFlatEnvCfg_PLAY,
@@ -238,7 +238,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Blind-Flat-v1",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFBlindFlatEnvCfg,
@@ -248,7 +248,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Blind-Flat-Play-v1",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFBlindFlatEnvCfg_PLAY,
@@ -263,7 +263,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Blind-Rough-v0",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFBlindRoughEnvCfg,
@@ -273,7 +273,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Blind-Rough-Play-v0",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFBlindRoughEnvCfg_PLAY,
@@ -288,7 +288,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Blind-Rough-v1",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFBlindRoughEnvCfg,
@@ -298,7 +298,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Blind-Rough-Play-v1",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFBlindRoughEnvCfg_PLAY,
@@ -313,7 +313,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Blind-Stair-v0",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFBlindStairEnvCfg,
@@ -323,7 +323,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Blind-Stair-Play-v0",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFBlindStairEnvCfg_PLAY,
@@ -338,7 +338,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Blind-Stair-v1",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFBlindStairEnvCfg,
@@ -348,7 +348,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Blind-Stair-Play-v1",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFBlindStairEnvCfg_PLAY,
@@ -363,7 +363,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Flat",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFFlatEnvCfg,
@@ -373,7 +373,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Flat-PLAY",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFFlatEnvCfg_PLAY,
@@ -388,7 +388,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Rough",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFRoughEnvCfg,
@@ -398,7 +398,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Stair-Rough",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFRoughEnvCfg_PLAY,
@@ -413,7 +413,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Stair",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFStairEnvCfg,
@@ -423,7 +423,7 @@ gym.register(
 
 gym.register(
     id="Isaac-WF-Stair-Play",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": wheelfoot_env_cfg.WFStairEnvCfg_PLAY,
